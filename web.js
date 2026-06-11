@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const DEMO_EMAIL_URL = "mailto:asieduyamao150@gmail.com?subject=MRA%20Systems%20Demo%20Request";
+  const DEMO_EMAIL_URL = "mailto:asieduyamoah150@gmail.com?subject=MRA%20Systems%20Demo%20Request";
   const DEMO_WHATSAPP_URL = "https://wa.me/233502013000?text=Hello%20MRA%20Systems%2C%20I%20want%20to%20book%20a%20demo.";
 
   const nav = document.getElementById("nav");
