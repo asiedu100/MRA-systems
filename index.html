@@ -27,11 +27,57 @@
 
 <meta name="theme-color" content="#E8820C" />
 
+<link rel="canonical" href="https://mrasystems.netlify.app/" />
+
 <link rel="icon" type="image/png" href="/MRA.png" />
 <link rel="apple-touch-icon" href="/MRA.png" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "name": "MRA Systems",
+      "url": "https://mrasystems.netlify.app/",
+      "logo": "https://mrasystems.netlify.app/MRA.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+233-502-013-000",
+        "contactType": "sales",
+        "email": "asieduyamoah150@gmail.com"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "MRA Systems",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "description": "MRA Systems helps African retail businesses manage inventory, invoices, warehouses and branches from one simple platform.",
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Starter",
+          "price": "149",
+          "priceCurrency": "GHS",
+          "priceValidUntil": "2027-12-31"
+        },
+        {
+          "@type": "Offer",
+          "name": "Business",
+          "price": "299",
+          "priceCurrency": "GHS",
+          "priceValidUntil": "2027-12-31"
+        }
+      ]
+    }
+  ]
+}
+</script>
+
   <!-- Google Fonts -->
   <link
-    href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@400;500&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Jost:wght@400;500;600;700;800;900&display=swap"
     rel="stylesheet"
   />
 
@@ -42,6 +88,7 @@
 
 <body>
 
+  <header>
   <!-- NAVBAR -->
   <nav class="nav" id="nav" aria-label="Primary navigation">
     <div class="nav-inner">
@@ -89,6 +136,9 @@
       <a href="https://wa.me/233502013000?text=Hello%20MRA%20Systems%2C%20I%20want%20to%20book%20a%20demo." class="btn btn-amber btn-full">Book a Call</a>
     </div>
   </div>
+  </header>
+
+  <main>
 
   <!-- HERO -->
   <section class="hero">
@@ -123,7 +173,7 @@
 
         <div class="hero-stats reveal" aria-label="MRA Systems highlights">
           <div>
-            <strong>9</strong>
+            <strong>12</strong>
             <span>Core modules</span>
           </div>
           <div>
@@ -136,7 +186,6 @@
           </div>
         </div>
 
-        <!-- FIXED: pill links now scroll to #features instead of going to login -->
         <div class="app-links reveal">
           <a href="#features">Inventory</a>
           <a href="#features">Invoices</a>
@@ -180,7 +229,7 @@
 
         <div class="trust-client">
           <div class="client-logo-wrap">
-            <img src="dee.jpeg" alt="Ultimate Dee Electricals logo">
+            <img src="dee.jpeg" alt="Ultimate Dee Electricals logo" loading="lazy" decoding="async">
           </div>
           <span>Ultimate Dee</span>
           <small>90% complete</small>
@@ -196,7 +245,7 @@
 
         <div class="trust-client">
           <div class="client-logo-wrap">
-            <img src="lumo.jpeg" alt="Lumoda Enterprise logo">
+            <img src="lumo.jpeg" alt="Lumoda Enterprise logo" loading="lazy" decoding="async">
           </div>
           <span>Lumoda Enterprise</span>
           <small>Completed build</small>
@@ -206,9 +255,6 @@
     </div>
   </section>
 
-  <!-- ================================================
-       PROBLEM SECTION (NEW)
-  ================================================ -->
   <section class="problem" id="problem">
     <div class="wrap">
 
@@ -294,31 +340,129 @@
       </h2>
 
       <p class="sec-sub reveal">
-        One platform. Nine powerful modules.
+        One platform. Twelve powerful modules.
       </p>
 
       <div class="feat-grid">
-        <div class="feat-card image-card inventory-card reveal">
+        <div class="feat-card photo inventory-photo reveal">
           <h3>Inventory Management</h3>
-          <p>Track stock levels in real time.</p>
+          <p>Track stock levels in real time across every branch.</p>
         </div>
-        <div class="feat-card image-card invoice-card reveal">
+
+        <div class="feat-card photo invoice-photo reveal">
           <h3>Invoice Generation</h3>
           <p>Create professional invoices in seconds.</p>
         </div>
-        <div class="feat-card image-card analytics-card reveal">
+
+        <div class="feat-card photo analytics-photo reveal">
           <h3>Reports & Analytics</h3>
           <p>Track sales and stock movement easily.</p>
         </div>
-      </div>
 
-      <div class="module-strip reveal" aria-label="More MRA Systems modules">
-        <span>Branches</span>
-        <span>Users</span>
-        <span>Suppliers</span>
-        <span>Expenses</span>
-        <span>Roles</span>
-        <span>Stock transfers</span>
+        <div class="feat-card reveal">
+          <div class="feat-icon icon-amber">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="3" width="7" height="7" rx="1.5"/>
+              <rect x="14" y="3" width="7" height="7" rx="1.5"/>
+              <rect x="3" y="14" width="7" height="7" rx="1.5"/>
+              <rect x="14" y="14" width="7" height="7" rx="1.5"/>
+            </svg>
+          </div>
+          <h3>Real-Time Dashboard</h3>
+          <p>See sales, stock and activity in one place.</p>
+        </div>
+
+        <div class="feat-card reveal">
+          <div class="feat-icon icon-green">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M3 21V10l9-6 9 6v11H3z"/>
+              <path d="M9 21v-6h6v6"/>
+            </svg>
+          </div>
+          <h3>Warehouse Management</h3>
+          <p>Monitor stock movement and warehouse balance.</p>
+        </div>
+
+        <div class="feat-card reveal">
+          <div class="feat-icon icon-amber">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="6" cy="6" r="2.2"/>
+              <circle cx="18" cy="6" r="2.2"/>
+              <circle cx="12" cy="18" r="2.2"/>
+              <path d="M7.7 7.4L10.4 16M16.3 7.4L13.6 16M8.2 6h7.6"/>
+            </svg>
+          </div>
+          <h3>Multi-Branch Management</h3>
+          <p>Run every location from one connected account.</p>
+        </div>
+
+        <div class="feat-card reveal">
+          <div class="feat-icon icon-green">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="9" cy="8" r="3.2"/>
+              <path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/>
+              <circle cx="18" cy="9" r="2.4"/>
+              <path d="M15.5 20c.3-2.6 2-4.7 4.3-5.4"/>
+            </svg>
+          </div>
+          <h3>User Management</h3>
+          <p>Add your team and control what each person can do.</p>
+        </div>
+
+        <div class="feat-card reveal">
+          <div class="feat-icon icon-amber">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 3l7 3v6c0 5-3 8.5-7 9-4-.5-7-4-7-9V6l7-3z"/>
+              <path d="M9 12l2 2 4-4"/>
+            </svg>
+          </div>
+          <h3>Roles & Permissions</h3>
+          <p>Set access levels so staff only see what they need.</p>
+        </div>
+
+        <div class="feat-card reveal">
+          <div class="feat-icon icon-green">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M3 7h11v9H3z"/>
+              <path d="M14 10h4l3 3v3h-7z"/>
+              <circle cx="7" cy="18" r="1.7"/>
+              <circle cx="17.5" cy="18" r="1.7"/>
+            </svg>
+          </div>
+          <h3>Supplier Management</h3>
+          <p>Keep supplier details and orders in one place.</p>
+        </div>
+
+        <div class="feat-card reveal">
+          <div class="feat-icon icon-amber">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M3 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/>
+              <path d="M16 12h3v3h-3a1.5 1.5 0 0 1 0-3z"/>
+            </svg>
+          </div>
+          <h3>Expense Tracking</h3>
+          <p>Log business expenses as they happen.</p>
+        </div>
+
+        <div class="feat-card reveal">
+          <div class="feat-icon icon-green">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M7 7h11l-3-3M18 17H7l3 3"/>
+            </svg>
+          </div>
+          <h3>Stock Transfers</h3>
+          <p>Move stock between branches without the guesswork.</p>
+        </div>
+
+        <div class="feat-card reveal">
+          <div class="feat-icon icon-amber">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M7 18a4.5 4.5 0 0 1-.5-8.97A6 6 0 0 1 18 8.5 4 4 0 0 1 17.5 18H7z"/>
+            </svg>
+          </div>
+          <h3>Cloud Access & Backups</h3>
+          <p>Work from anywhere with automatic cloud backups.</p>
+        </div>
       </div>
 
     </div>
@@ -340,7 +484,7 @@
           <p>See sales, stock movement, invoice activity and branch performance without jumping between spreadsheets.</p>
         </div>
         <div class="panel-screen">
-          <img src="analysis2.jpg" alt="Business analytics dashboard on a laptop">
+          <img src="analysis2.jpg" alt="Business analytics dashboard on a laptop" loading="lazy" decoding="async">
         </div>
       </div>
 
@@ -352,30 +496,15 @@
           <button class="module-tab" type="button" role="tab" aria-selected="false" data-module="branches">Branches</button>
         </div>
 
-        <div class="module-preview">
+        <div class="module-preview" aria-live="polite">
           <div class="module-copy">
             <span class="plan-tag" id="moduleTag">Inventory control</span>
             <h3 id="moduleTitle">Know what is in stock before customers ask</h3>
             <p id="moduleText">Track products, quantities, low-stock items and stock movement from one clean workspace.</p>
           </div>
           <div class="module-screen">
-            <img id="moduleImage" src="inventory.jpg" alt="Inventory management preview">
+            <img id="moduleImage" src="inventory.jpg" alt="Inventory management preview" loading="lazy" decoding="async">
           </div>
-        </div>
-      </div>
-
-      <div class="feat-grid compact-grid">
-        <div class="feat-card image-card dashboard-card reveal">
-          <h3>Dashboard</h3>
-          <p>View sales, stock levels and business activity in one place.</p>
-        </div>
-        <div class="feat-card image-card invoice-card reveal">
-          <h3>Invoices</h3>
-          <p>Create and track customer invoices quickly.</p>
-        </div>
-        <div class="feat-card image-card warehouse-card reveal">
-          <h3>Warehouse</h3>
-          <p>Monitor stock movement and warehouse balance.</p>
         </div>
       </div>
     </div>
@@ -404,16 +533,16 @@
           </p>
         </div>
         <div class="work-screen work-screen-main lumoda-stack" aria-label="Lumoda Enterprise inventory management mockups">
-          <img src="SLIDE1.jpeg" alt="Lumoda Enterprise main inventory dashboard mockup">
-          <img src="SLIDE2.jpeg" alt="Lumoda Enterprise inventory screen mockup">
-          <img src="SLIDE3.jpeg" alt="Lumoda Enterprise reports screen mockup">
+          <img src="SLIDE1.jpeg" alt="Lumoda Enterprise main inventory dashboard mockup" loading="lazy" decoding="async">
+          <img src="SLIDE2.jpeg" alt="Lumoda Enterprise inventory screen mockup" loading="lazy" decoding="async">
+          <img src="SLIDE3.jpeg" alt="Lumoda Enterprise reports screen mockup" loading="lazy" decoding="async">
         </div>
       </div>
 
       <div class="work-grid">
         <article class="work-card reveal">
           <div class="work-screen">
-            <img src="u1.png" alt="Ultimate Dee inventory system dashboard mockup">
+            <img src="u1.png" alt="Ultimate Dee inventory system dashboard mockup" loading="lazy" decoding="async">
           </div>
           <div class="work-card-copy">
             <span>90% complete</span>
@@ -424,7 +553,7 @@
 
         <article class="work-card reveal">
           <div class="work-screen">
-            <img src="u2.png" alt="Ultimate Dee inventory modules mockup">
+            <img src="u2.png" alt="Ultimate Dee inventory modules mockup" loading="lazy" decoding="async">
           </div>
           <div class="work-card-copy">
             <span>Custom modules</span>
@@ -435,8 +564,8 @@
 
         <article class="work-card reveal">
           <div class="work-screen multi-screen">
-            <img src="u3.png" alt="Ultimate Dee product tracking mockup">
-            <img src="u4.png" alt="Ultimate Dee reporting mockup">
+            <img src="u3.png" alt="Ultimate Dee product tracking mockup" loading="lazy" decoding="async">
+            <img src="u4.png" alt="Ultimate Dee reporting mockup" loading="lazy" decoding="async">
           </div>
           <div class="work-card-copy">
             <span>90% complete</span>
@@ -480,7 +609,6 @@
     </div>
   </section>
 
-  <!-- PRICING — FIXED: Starter is GHS 149 everywhere -->
   <section class="pricing" id="pricing">
     <div class="wrap">
       <div class="label reveal">Pricing</div>
@@ -488,11 +616,31 @@
       <p class="sec-sub reveal">Start small and upgrade as your business grows.</p>
       <p class="sec-note reveal">All paid plans include a <strong>30-day free trial</strong>. No card required to start.</p>
 
+      <div class="billing-toggle reveal">
+        <span class="billing-label" id="billingMonthlyLabel">Monthly</span>
+        <button type="button" class="switch" id="billingSwitch" role="switch" aria-checked="false" aria-label="Switch between monthly and yearly billing">
+          <span class="switch-knob"></span>
+        </button>
+        <span class="billing-label" id="billingYearlyLabel">Yearly</span>
+        <span class="billing-badge">2 months free</span>
+      </div>
+
       <div class="pricing-grid">
         <div class="price-card reveal">
           <h3>Starter</h3>
           <p>For small shops starting digital inventory. 1 branch, up to 3 users.</p>
-          <h2>GHS 149/mo</h2>
+          <p class="price" data-monthly="149" data-yearly="1490">
+            <span class="price-amount">GHS 149/mo</span>
+            <span class="price-note" hidden>billed GHS 1,490/year</span>
+          </p>
+          <ul class="price-features">
+            <li>1 branch</li>
+            <li>Up to 3 users</li>
+            <li>Inventory management</li>
+            <li>Invoice generation</li>
+            <li>Basic reports</li>
+            <li>Email support</li>
+          </ul>
           <a href="mailto:asieduyamoah150@gmail.com?subject=MRA%20Systems%20Starter%20Plan%20Demo" class="btn btn-outline btn-full">Request Demo</a>
         </div>
 
@@ -500,21 +648,42 @@
           <span class="plan-tag">Popular</span>
           <h3>Business</h3>
           <p>For growing retail shops with staff and branches. Unlimited branches, up to 10 users.</p>
-          <h2>GHS 299/mo</h2>
+          <p class="price" data-monthly="299" data-yearly="2990">
+            <span class="price-amount">GHS 299/mo</span>
+            <span class="price-note" hidden>billed GHS 2,990/year</span>
+          </p>
+          <ul class="price-features">
+            <li>Unlimited branches</li>
+            <li>Up to 10 users</li>
+            <li>Everything in Starter</li>
+            <li>Advanced reports & analytics</li>
+            <li>Supplier & expense tracking</li>
+            <li>Roles & permissions</li>
+            <li>Priority support</li>
+          </ul>
           <a href="mailto:asieduyamoah150@gmail.com?subject=MRA%20Systems%20Business%20Plan%20Demo" class="btn btn-amber btn-full">Request Demo</a>
         </div>
 
         <div class="price-card reveal">
           <h3>Enterprise</h3>
           <p>For larger businesses that need custom setup and SLAs.</p>
-          <h2>Custom</h2>
+          <p class="price">
+            <span class="price-amount">Custom</span>
+          </p>
+          <ul class="price-features">
+            <li>Unlimited branches & users</li>
+            <li>Everything in Business</li>
+            <li>Custom onboarding & data migration</li>
+            <li>Dedicated account manager</li>
+            <li>Custom integrations & SLAs</li>
+            <li>24/7 priority support</li>
+          </ul>
           <a href="https://wa.me/233502013000?text=Hello%20MRA%20Systems%2C%20I%20want%20to%20book%20an%20enterprise%20demo." class="btn btn-outline btn-full">Book demo</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FAQ — rebuilt as accordion with 8 questions -->
   <section class="faq" id="faq">
     <div class="wrap">
       <div class="label reveal">FAQ</div>
@@ -623,7 +792,8 @@
     </div>
   </section>
 
-  <!-- FOOTER — expanded -->
+  </main>
+
   <footer>
     <div class="wrap">
 
@@ -631,7 +801,7 @@
         <div class="ft-brand">
           <a href="#" class="logo ft-logo">
             <span class="logo-mark">
-              <img src="MRA.png" alt="MRA Systems">
+              <img src="MRA.png" alt="MRA Systems" loading="lazy" decoding="async">
             </span>
             <span>MRA Systems</span>
           </a>
@@ -732,7 +902,6 @@
         <input id="signupBusiness" type="text" name="business" placeholder="Shop or company name" required>
         <label for="signupPhone">Phone number</label>
         <input id="signupPhone" type="tel" name="phone" placeholder="024 000 0000" required>
-        <!-- FIXED: Starter price corrected to GHS 149/mo -->
         <label for="signupPlan">Plan</label>
         <select id="signupPlan" name="plan">
           <option>Starter - GHS 149/mo</option>
@@ -748,9 +917,6 @@
     </div>
   </div>
 
-  <!-- JS -->
-  <script src="./supabase-config.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="web.js"></script>
 
 </body>

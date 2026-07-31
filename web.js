@@ -266,4 +266,41 @@ document.addEventListener("DOMContentLoaded", () => {
       moduleImage.alt = content.alt;
     });
   });
+
+  /* ---- BILLING TOGGLE ---- */
+  const billingSwitch = document.getElementById("billingSwitch");
+  const billingMonthlyLabel = document.getElementById("billingMonthlyLabel");
+  const billingYearlyLabel = document.getElementById("billingYearlyLabel");
+  const priceEls = document.querySelectorAll(".price[data-monthly][data-yearly]");
+
+  function setBilling(yearly) {
+    billingSwitch?.setAttribute("aria-checked", String(yearly));
+    billingMonthlyLabel?.classList.toggle("active", !yearly);
+    billingYearlyLabel?.classList.toggle("active", yearly);
+
+    priceEls.forEach((price) => {
+      const monthly = Number(price.dataset.monthly);
+      const yearlyTotal = Number(price.dataset.yearly);
+      const amount = price.querySelector(".price-amount");
+      const note = price.querySelector(".price-note");
+      if (!amount || !note) return;
+
+      if (yearly) {
+        const perMonth = Math.round(yearlyTotal / 12);
+        amount.textContent = `GHS ${perMonth}/mo`;
+        note.textContent = `billed GHS ${yearlyTotal.toLocaleString()}/year`;
+        note.hidden = false;
+      } else {
+        amount.textContent = `GHS ${monthly}/mo`;
+        note.hidden = true;
+      }
+    });
+  }
+
+  if (billingSwitch) {
+    setBilling(false);
+    billingSwitch.addEventListener("click", () => {
+      setBilling(billingSwitch.getAttribute("aria-checked") !== "true");
+    });
+  }
 });
